@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hospital_project.Add_new_doctor" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cCAAAAAAASAAABCSEACAAABSIAAIAAAAEGAAAAAAAII=</HashCode>
+      <FileName>Add_new_doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Add_new_reciptionist" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UCAAAAAAASAAABCSEACAAABCIAAIAAgAEGAAAAAAAII=</HashCode>
+      <FileName>Add_new_reciptionist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Add_new_storage_man" Collapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UCAAAAAAASAAABCSEACAAABCIAAIAAAAEGAAAAAAAII=</HashCode>
+      <FileName>Add_new_storage_man.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Add_Storage" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAACCAAABAQAACAAABCIAAIAAAAFEAAAAAAAAA=</HashCode>
+      <FileName>Add_Storage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.All_Employees" Collapsed="true">
+    <Position X="12.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAACAAAACAAggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Choose_employee" Collapsed="true">
+    <Position X="14.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAgABAQAACAAAgKAAAIAAAQAEAAAAAAAAA=</HashCode>
+      <FileName>Choose_employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Choose_employee_factory" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Choose_employee_factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.DBManager" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAFAAAIAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DBManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Delete_storage" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAACAAAACAAAIAAAAAEQAAAAAAAA=</HashCode>
+      <FileName>Delete_storage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Doctor" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAACAAABARAISAAAACAMg5AAAAwHAPAAAAAAA=</HashCode>
+      <FileName>Doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Doctor_controller" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAACAEAAAAAAAAAAAoAAAAAAAAAAAAAABABACA=</HashCode>
+      <FileName>Doctor_controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Doctor_View_strategy" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Doctor_View_strategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Employee_factory" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Employee_factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Employee_info" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAYAAAAAGAAAAAAAAA=</HashCode>
+      <FileName>Employee_info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Employee_View" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAAACAAAACAAggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee_View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Employee_View_strategy" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee_View_strategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Fire_Employee" Collapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAACAAAgCAAAIAAAAAEQAAAAAAAA=</HashCode>
+      <FileName>Fire_Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.login" Collapsed="true">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAABAAAASACAAKAAAoAAAAkEQAgAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Get_username_or_password" Collapsed="true">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAABAQAACAAABSAAAIAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Get_username_or_password.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Login_Controller" Collapsed="true">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAACAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAEAA=</HashCode>
+      <FileName>Login_Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Program" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Reciptionist" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAEBAQAASAAAACAMA4AAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Reciptionist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Storage" Collapsed="true">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAASAAAASAEA4AAAABHAIAAAAAAA=</HashCode>
+      <FileName>Storage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Storage_controller" Collapsed="true">
+    <Position X="14.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAAAAAABAAAIAAAIAAAAAAAAAACIAAAAA=</HashCode>
+      <FileName>Storage_controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Update_employee" Collapsed="true">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAABAQAACAAABCIAAIAAAAFEAAAAAAAAA=</HashCode>
+      <FileName>Update_employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Update_Storage" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAACAAAACAAAIAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Update_Storage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.View_storage_info" Collapsed="true">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAACAAAACAAggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View_storage_info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.View_Strategy" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>View_Strategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApplication1.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_project.Properties.Settings" Collapsed="true">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Employee_choice" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doctor_controller.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
