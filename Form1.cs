@@ -30,6 +30,7 @@ namespace Hospital_project
             if (textBox1.Text == "" || textBox2.Text == "")
             {
                 MessageBox.Show("Please,insert your username and password");
+                return;
             }
             int User_name = C.login(Convert.ToInt32(textBox1.Text), textBox2.Text);
             if (User_name > 0)
