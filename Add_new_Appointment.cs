@@ -43,5 +43,26 @@ namespace Hospital_project
             
         }
 
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataTable dt = control_object.get_appointments(Convert.ToString(comboBox3.SelectedValue));
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
+            DataTable dt2 = control_object.get_doctors(Convert.ToString(comboBox3.SelectedValue));
+            comboBox1.DataSource = dt2;
+            comboBox1.DisplayMember = "Name";
+            comboBox1.ValueMember = "User_name";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

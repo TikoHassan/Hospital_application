@@ -80,10 +80,5 @@ namespace Hospital_project
             string query = "Select F_name,M_name,L_name,(User_name/1000),E_mail,Phone,Sex,Wage,Start_Date,Address from Employee where User_name=" + id;
             return dbMan.ExecuteReader(query);
         }
-        public DataTable view_schedule(string major)
-        {
-            string query = "Select (F_name+' '+M_name+' '+L_name)AS Name from Employee,Doctor_Major where Doctor_id=User_name and Major="+"'"+major+"'";
-            return dbMan.ExecuteReader(query);
-        }
     }
 }
