@@ -38,6 +38,16 @@ namespace Hospital_project
                 ")";
             return dbMan.ExecuteNonQuery(query);
         }
+        public int update_appointment(string time,string status,DateTime date,int patient_id,int doctor_id)
+        {
+            string query = "UPDATE Appointments SET" + " " +
+                "Time=" + "'" + time + "'," +
+                "Status=" + "'" + status + "'," +
+                "Date=" + "'" + date.ToString("yyyy-MM-dd") + "'" +
+                "Where Patient_id=" + patient_id +
+                "and Doctor_id=" + doctor_id;
+            return dbMan.ExecuteNonQuery(query);
+        }
         public DataTable get_major()
         {
             string query = "select distinct Major from Doctor_Major";
@@ -49,9 +59,30 @@ namespace Hospital_project
                 "and Doctor_Major.Doctor_id=User_name and Doctor_schedule.Doctor_id=User_name";
             return dbMan.ExecuteReader(query);
         }
+        public string patient_name(int id)
+        {
+            string query = "Select (F_name+' '+M_name+' '+L_name)AS Name from Patient where ID="+ id;
+            return (string)dbMan.ExecuteScalar(query);
+        }
         public DataTable get_doctors(string major)
         {
             string query = "Select User_name,(F_name+' '+M_name+' '+L_name)AS Name from Employee,Doctor_major where User_name !=1 and Doctor_id=User_name and Major=" + "'" + major + "'";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable doctors_names()
+        {
+            string query="Select User_name,(F_name+' '+M_name+' '+L_name)AS Name from Employee where (User_name/1000)=11 or (User_name/1000)=10";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable doctor_schedule(int id)
+        {
+            string query = "select DAY,Start_time,End_time from Doctor_schedule where Doctor_id=" + id;
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable schedule_strategy(int id)
+        {
+            string query = "Select (F_name+' '+M_name+' '+L_name)AS Name, DAY,Start_time,End_time from Employee,Doctor_schedule where Doctor_id=" + id +
+                "and User_name="+id;
             return dbMan.ExecuteReader(query);
         }
     }

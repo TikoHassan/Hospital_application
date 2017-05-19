@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace Hospital_project
 {
-    public partial class Patient_type : Form
+    public partial class Doctor_View : Form
     {
-        public Patient_type()
+        public Doctor_View(DataTable dt)
         {
             InitializeComponent();
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            new Add_new_Appointment().Show();
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Patient_id().Show(); 
         }
     }
 }

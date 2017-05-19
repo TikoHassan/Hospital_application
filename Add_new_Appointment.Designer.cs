@@ -255,7 +255,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(663, 207);
+            this.button1.Location = new System.Drawing.Point(663, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 40);
             this.button1.TabIndex = 23;
@@ -302,7 +302,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Location = new System.Drawing.Point(677, 298);
+            this.groupBox2.Location = new System.Drawing.Point(663, 234);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(140, 56);
             this.groupBox2.TabIndex = 28;

@@ -39,5 +39,15 @@ namespace Hospital_project
         {
             new Patient_type().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Update_appointment().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new Choose_Doctor(new Schedule_view_strategy()).Show();
+        }
     }
 }
