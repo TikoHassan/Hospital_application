@@ -135,6 +135,12 @@
     <Compile Include="Get_username_or_password.Designer.cs">
       <DependentUpon>Get_username_or_password.cs</DependentUpon>
     </Compile>
+    <Compile Include="Past_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Past_patient.Designer.cs">
+      <DependentUpon>Past_patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient_type.cs">
       <SubType>Form</SubType>
     </Compile>

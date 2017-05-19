@@ -21,5 +21,10 @@ namespace Hospital_project
         {
             new Add_new_Appointment().Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Past_patient().Show(); 
+        }
     }
 }

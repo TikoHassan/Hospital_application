@@ -21,6 +21,7 @@ namespace Hospital_project
             comboBox3.DataSource = dt;
             comboBox3.DisplayMember = "Major";
             comboBox3.ValueMember = "Major";
+            radioButton3.Checked = true;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -30,7 +31,26 @@ namespace Hospital_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int ckeck=control_object.Add_new_appointment();
+            int check = control_object.Add_new_patient(textBox1.Text, textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text),
+                textBox5.Text, dateTimePicker1.Value, radioButton1.Checked ? "M" : "F");
+            int check2 = control_object.Add_new_appointment(dateTimePicker2.Value,textBox6.Text,
+                radioButton3.Checked?"New":"NULL",Convert.ToInt32(textBox4.Text),Convert.ToInt32(comboBox1.SelectedValue));
+            if (check > 0 && check2 > 0)
+            {
+                MessageBox.Show("Appointment added successfully");
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox6.Clear();
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                dataGridView1.DataSource = null;
+                dataGridView1.Refresh();
+            }
+            else
+                MessageBox.Show("Error!Cannot add Appointemt");
         }
 
         private void Add_new_Appointment_Load(object sender, EventArgs e)

@@ -14,9 +14,28 @@ namespace Hospital_project
         {
             dbMan = DBManager.get_instnace();
         }
-        public int Add_new_appointment()
+        public int Add_new_appointment(DateTime date,string time,string status,int patient_id,int doctor_id)
         {
-            string query = "";
+            string query = "INSERT INTO Appointments (Date,Time,Status,Patient_id,Doctor_id) VALUES ("+
+                "'" + date.ToString("yyyy-MM-dd") + "'," +
+                "'" + time + "'," +
+                "'" + status + "'," +
+                "" + patient_id + "," +
+                "" +doctor_id + "" +
+                ")";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int Add_new_patient(string f_name,string m_name,string l_name,int id,string e_mail,DateTime date,string sex)
+        {
+            string query = "INSERT INTO Patient (F_name,M_name,L_name,ID,E_mail,Birthdate,Sex) VALUES ("+
+               "'" + f_name + "'," +
+                "'" + m_name + "'," +
+                "'" + l_name + "'," +
+                "" + id + "," +
+                "'" + e_mail + "'," +
+                "'" + date.ToString("yyyy-MM-dd") + "'," +
+                 "'" + sex + "'" +            
+                ")";
             return dbMan.ExecuteNonQuery(query);
         }
         public DataTable get_major()
