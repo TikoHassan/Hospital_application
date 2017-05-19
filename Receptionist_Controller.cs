@@ -85,5 +85,15 @@ namespace Hospital_project
                 "and User_name="+id;
             return dbMan.ExecuteReader(query);
         }
+        public DataTable information_stategy(int id)
+        {
+            string query = "Select (F_name+' '+M_name+' '+L_name)AS Name,Phone,E_mail from Employee where User_name="+id;
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable View_appointment()
+        {
+            string query = "select (Employee.F_name+' '+Employee.M_name+' '+Employee.L_name) AS Doctor_Name,(Patient.F_name+' '+Patient.M_name+' '+Patient.L_name) AS Patient_Name,Date,Time,Status from Employee,Patient,Appointments where Doctor_id=User_name and Patient_id=ID";
+            return dbMan.ExecuteReader(query);
+        }
     }
 }

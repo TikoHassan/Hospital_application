@@ -80,6 +80,12 @@
     <Compile Include="All_Employees.Designer.cs">
       <DependentUpon>All_Employees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appointment_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment_Information.Designer.cs">
+      <DependentUpon>Appointment_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Choose_Doctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,7 @@
       <DependentUpon>Employee_View.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee_View_strategy.cs" />
+    <Compile Include="Information_Strategy.cs" />
     <Compile Include="Login_Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="Delete_storage.cs">
@@ -224,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All_Employees.resx">
       <DependentUpon>All_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment_Information.resx">
+      <DependentUpon>Appointment_Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Choose_Doctor.resx">
       <DependentUpon>Choose_Doctor.cs</DependentUpon>

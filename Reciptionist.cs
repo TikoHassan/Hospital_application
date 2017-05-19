@@ -49,5 +49,15 @@ namespace Hospital_project
         {
             new Choose_Doctor(new Schedule_view_strategy()).Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Choose_Doctor(new Information_Strategy()).Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Appointment_Information().Show();
+        }
     }
 }
