@@ -45,12 +45,19 @@ namespace Hospital_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int check = control_object.Add_new_appointment(dateTimePicker1.Value,textBox4.Text,radioButton1.Checked?"Cure":"Consult",
-                patient_id,Convert.ToInt32(comboBox2.SelectedValue));
-            if (check > 0)
-                MessageBox.Show("Appointment added successfully");
+            if (textBox4.Text == "" || (radioButton1.Checked == false && radioButton2.Checked == false))
+            {
+                MessageBox.Show("Please fill all data");
+            }
             else
-                MessageBox.Show("Error!Cannot add Appointment");
+            {
+                int check = control_object.Add_new_appointment(dateTimePicker1.Value, textBox4.Text, radioButton1.Checked ? "Cure" : "Consult",
+                    patient_id, Convert.ToInt32(comboBox2.SelectedValue));
+                if (check > 0)
+                    MessageBox.Show("Appointment added successfully");
+                else
+                    MessageBox.Show("Error!Cannot add Appointment");
+            }
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Hospital_project
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox6.Text == "" || textBox7.Text == "" ||
-                textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == "")
+                textBox8.Text == "" || textBox9.Text == "" || textBox10.Text == ""||(radioButton1.Checked==false&&radioButton2.Checked==false))
                 MessageBox.Show("Please enter all Data");
             else if (Convert.ToInt32(textBox6.Text) / 1000 != 11)
                 MessageBox.Show("Please Enter correct User_name");

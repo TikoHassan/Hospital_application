@@ -95,5 +95,10 @@ namespace Hospital_project
             string query = "select (Employee.F_name+' '+Employee.M_name+' '+Employee.L_name) AS Doctor_Name,(Patient.F_name+' '+Patient.M_name+' '+Patient.L_name) AS Patient_Name,Date,Time,Status from Employee,Patient,Appointments where Doctor_id=User_name and Patient_id=ID";
             return dbMan.ExecuteReader(query);
         }
+        public int delete_appointments()
+        {
+            string query = "Delete from Appointments where Status='finish'";
+            return dbMan.ExecuteNonQuery(query);
+        }
     }
 }

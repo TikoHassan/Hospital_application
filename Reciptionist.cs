@@ -13,6 +13,7 @@ namespace Hospital_project
     public partial class Reciptionist : Form
     {
         Login_Controller control_object;
+        Receptionist_Controller control_object2;
         public Reciptionist(int id)
         {
             InitializeComponent();
@@ -58,6 +59,15 @@ namespace Hospital_project
         private void button5_Click(object sender, EventArgs e)
         {
             new Appointment_Information().Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int check = control_object2.delete_appointments();
+            if (check > 0)
+                MessageBox.Show("Appointments deleted successfully");
+            else
+                MessageBox.Show("Error!Cannot delete");
         }
     }
 }

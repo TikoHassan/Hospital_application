@@ -31,6 +31,12 @@ namespace Hospital_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(textBox1.Text==""||textBox2.Text==""||textBox3.Text==""||textBox4.Text==""||textBox5.Text==""||textBox6.Text==""||(radioButton1.Checked==false&&radioButton2.Checked==false))
+            {
+                MessageBox.Show("Please fill all data");
+            }
+            else
+            {
             int check = control_object.Add_new_patient(textBox1.Text, textBox2.Text, textBox3.Text, Convert.ToInt32(textBox4.Text),
                 textBox5.Text, dateTimePicker1.Value, radioButton1.Checked ? "M" : "F");
             int check2 = control_object.Add_new_appointment(dateTimePicker2.Value,textBox6.Text,
@@ -51,6 +57,7 @@ namespace Hospital_project
             }
             else
                 MessageBox.Show("Error!Cannot add Appointemt");
+        }
         }
 
         private void Add_new_Appointment_Load(object sender, EventArgs e)

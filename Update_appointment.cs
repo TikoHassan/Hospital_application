@@ -32,6 +32,12 @@ namespace Hospital_project
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if(textBox1.Text==""||textBox2.Text==""||(radioButton1.Checked==false&&radioButton2.Checked==false))
+            {
+                MessageBox.Show("please fill all data");
+            }
+            else
+            {
             int check = control_object.update_appointment(textBox2.Text,radioButton1.Checked?"Cure":"Consult",
                 dateTimePicker1.Value, Convert.ToInt32(textBox1.Text), Convert.ToInt32(comboBox1.SelectedValue));
             if (check > 0)
@@ -46,6 +52,7 @@ namespace Hospital_project
             }
             else
                 MessageBox.Show("Error!Cannot update");
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
