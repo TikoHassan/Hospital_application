@@ -18,6 +18,7 @@ namespace Hospital_project
         {
             InitializeComponent();
             control_object = new Login_Controller();
+            control_object2 = new Receptionist_Controller();
             label1.Text = "Welcome MS." + control_object.Employee_fname(id);
         }
 

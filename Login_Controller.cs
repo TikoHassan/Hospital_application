@@ -44,6 +44,11 @@ namespace Hospital_project
                 return 0;
             return (int)us;
         }
+        public int Sql_injection_prevent(int id,string password)
+        {
+            string query = "Select Count(*) from Employee where User_name=" + id + "and Password= '" + password + "'";
+            return (int)dbMan.ExecuteScalar(query);
+        }
     
 
     }

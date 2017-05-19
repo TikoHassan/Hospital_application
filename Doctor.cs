@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System;using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -13,10 +12,12 @@ namespace Hospital_project
     public partial class Doctor : Form
     {
         Login_Controller control_object;
+        int id;
         public Doctor(int user_name)
         {
             InitializeComponent();
             control_object = new Login_Controller();
+            id = user_name;
             label1.Text = "Welcome Dr." + control_object.Employee_fname(user_name);
             if ((user_name / 1000) == 11)
             {
@@ -37,7 +38,7 @@ namespace Hospital_project
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            new Doctor_Patient(id,Function.view_patient).Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,6 +96,21 @@ namespace Hospital_project
         {
             View_storage_info v = new View_storage_info();
             v.Show();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            new Doctor_Patient(id,Function.finish_appointment).Show();
+        }
+
+        private void Doctor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

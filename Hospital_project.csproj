@@ -99,6 +99,12 @@
       <DependentUpon>Choose_employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Choose_employee_factory.cs" />
+    <Compile Include="Doctor_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Patient.Designer.cs">
+      <DependentUpon>Doctor_Patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor_View.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,12 @@
     </Compile>
     <Compile Include="Patient_id.Designer.cs">
       <DependentUpon>Patient_id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_info_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_info_view.Designer.cs">
+      <DependentUpon>Patient_info_view.cs</DependentUpon>
     </Compile>
     <Compile Include="Patient_type.cs">
       <SubType>Form</SubType>
@@ -247,6 +259,9 @@
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Patient.resx">
+      <DependentUpon>Doctor_Patient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor_View.resx">
       <DependentUpon>Doctor_View.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_id.resx">
       <DependentUpon>Patient_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_info_view.resx">
+      <DependentUpon>Patient_info_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_type.resx">
       <DependentUpon>Patient_type.cs</DependentUpon>

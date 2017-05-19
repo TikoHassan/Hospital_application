@@ -33,7 +33,8 @@ namespace Hospital_project
                 return;
             }
             int User_name = C.login(Convert.ToInt32(textBox1.Text), textBox2.Text);
-            if (User_name > 0)
+            int count =C.Sql_injection_prevent(Convert.ToInt32(textBox1.Text),textBox2.Text);
+            if (User_name > 0 && count==1)
             {
                 F = choice.Create_form(User_name);
                 textBox1.Clear();
@@ -43,7 +44,7 @@ namespace Hospital_project
                 F.ShowDialog();
             }
             else
-                MessageBox.Show("Error!Wrong User_name or Password");
+                MessageBox.Show("Error!Wrong user_name or password");
         }
 
         private void Form1_Load(object sender, EventArgs e)
