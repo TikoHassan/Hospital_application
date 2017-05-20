@@ -70,5 +70,15 @@ namespace Hospital_project
             else
                 MessageBox.Show("Error!Cannot delete");
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new Add_schedule().Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new Update_schedule().Show();
+        }
     }
 }

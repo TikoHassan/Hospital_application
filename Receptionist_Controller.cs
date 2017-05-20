@@ -100,5 +100,24 @@ namespace Hospital_project
             string query = "Delete from Appointments where Status='finish'";
             return dbMan.ExecuteNonQuery(query);
         }
+        public int Add_schedule(int doctor_id, string start_time, string end_time, string day)
+        {
+            string query = "INSERT INTO Doctor_schedule (Doctor_id,Start_time,End_time,Day) VALUES("+
+                "" + doctor_id + "," +
+                "'" + start_time + "'," +
+                "'" + end_time + "'," +
+                 "'" + day + "'" +
+                ")";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int update_schedule(int doctor_id, string start_time, string end_time, string day)
+        {
+            string query = "UPDATE Doctor_schedule SET" + " " +
+                "End_time=" + "'" + end_time + "'," +
+                "Start_time=" + "'" + start_time + "'" +
+                "Where Doctor_id=" + doctor_id +
+                "and Day="+"'"+day+"'";
+            return dbMan.ExecuteNonQuery(query);
+        }
     }
 }

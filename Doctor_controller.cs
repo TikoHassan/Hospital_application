@@ -106,5 +106,32 @@ namespace Hospital_project
             string query = "select Medicine from [Patient's_Medicine] where Patient_id=" + id;
             return dbMan.ExecuteReader(query);
         }
+        public int Add_disease(int patient_id, string d)
+        {
+            string query = "INSERT INTO [Patient's_disease] (Patient_id,Disease) VALUES(" + "" + patient_id + "," + "'" + d + "'" + ")";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int Add_medicine(int patient_id, string m)
+        {
+            string query = "INSERT INTO  [Patient's_Medicine] (Patient_id,Medicine) VALUES(" + "" + patient_id + "," + "'" + m + "'" + ")";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int delete_info(int id, string disease)
+        {
+            string query = "Delete from [Patient's_disease] where Patient_id=" + id + "and Disease=" +"'"+disease+"'";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int delete_medicine(int id, string medicine)
+        {
+            string query = "Delete from [Patient's_Medicine] where Patient_id=" + id + "and Medicine=" + "'" + medicine + "'";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public DataTable my_schedule(int id)
+        {
+            DateTime date = DateTime.Now;
+            string query = "select (F_name+' '+M_name+' '+L_name)AS Name, Time,Status from Appointments,Patient where Doctor_id="+id+
+                "and Date=" + "'" + date.ToString("yyyy-MM-dd") + "'" + "and patient_id=ID";
+            return dbMan.ExecuteReader(query);
+        }
     }
 }

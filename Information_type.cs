@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace Hospital_project
 {
-    public partial class Patient_id : Form
+    public partial class Information_type : Form
     {
-        public Patient_id()
+        public Information_type()
         {
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Diseases_form().Show();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-                MessageBox.Show("Please enter patient ID");
-            else
-            {
-                new Past_patient(Convert.ToInt32(textBox1.Text)).Show();
-            }
+            new Medicine_form().Show();
         }
     }
 }

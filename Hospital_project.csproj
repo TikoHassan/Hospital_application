@@ -68,6 +68,12 @@
     <Compile Include="Add_new_storage_man.Designer.cs">
       <DependentUpon>Add_new_storage_man.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_schedule.Designer.cs">
+      <DependentUpon>Add_schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Storage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,24 @@
       <DependentUpon>Choose_employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Choose_employee_factory.cs" />
+    <Compile Include="Delete_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_info.Designer.cs">
+      <DependentUpon>Delete_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_medicine.Designer.cs">
+      <DependentUpon>Delete_medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diseases form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diseases form.Designer.cs">
+      <DependentUpon>Diseases form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +144,12 @@
     </Compile>
     <Compile Include="Employee_View_strategy.cs" />
     <Compile Include="Information_Strategy.cs" />
+    <Compile Include="Information_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information_type.Designer.cs">
+      <DependentUpon>Information_type.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="Delete_storage.cs">
@@ -159,6 +189,18 @@
     </Compile>
     <Compile Include="Get_username_or_password.Designer.cs">
       <DependentUpon>Get_username_or_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicine_form.Designer.cs">
+      <DependentUpon>Medicine_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Schedule.Designer.cs">
+      <DependentUpon>My_Schedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Past_patient.cs">
       <SubType>Form</SubType>
@@ -213,6 +255,12 @@
     <Compile Include="Update_employee.Designer.cs">
       <DependentUpon>Update_employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_schedule.Designer.cs">
+      <DependentUpon>Update_schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update_Storage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +286,9 @@
     <EmbeddedResource Include="Add_new_storage_man.resx">
       <DependentUpon>Add_new_storage_man.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_schedule.resx">
+      <DependentUpon>Add_schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Storage.resx">
       <DependentUpon>Add_Storage.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,8 +304,17 @@
     <EmbeddedResource Include="Choose_employee.resx">
       <DependentUpon>Choose_employee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete_info.resx">
+      <DependentUpon>Delete_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_medicine.resx">
+      <DependentUpon>Delete_medicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Delete_storage.resx">
       <DependentUpon>Delete_storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diseases form.resx">
+      <DependentUpon>Diseases form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
@@ -279,6 +339,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Get_username_or_password.resx">
       <DependentUpon>Get_username_or_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information_type.resx">
+      <DependentUpon>Information_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicine_form.resx">
+      <DependentUpon>Medicine_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Schedule.resx">
+      <DependentUpon>My_Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Past_patient.resx">
       <DependentUpon>Past_patient.cs</DependentUpon>
@@ -313,6 +382,9 @@
     <EmbeddedResource Include="Update_employee.resx">
       <DependentUpon>Update_employee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Update_schedule.resx">
+      <DependentUpon>Update_schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Update_Storage.resx">
       <DependentUpon>Update_Storage.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +392,7 @@
       <DependentUpon>View_storage_info.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

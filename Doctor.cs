@@ -110,7 +110,22 @@ namespace Hospital_project
 
         private void button10_Click(object sender, EventArgs e)
         {
+            new Delete_info().Show();
+        }
 
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            new Information_type().Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            new My_Schedule(id).Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            new Delete_medicine().Show();
         }
     }
 }
